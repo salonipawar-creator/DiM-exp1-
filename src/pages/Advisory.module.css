@@ -1,0 +1,314 @@
+.emergencyBanner {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  padding: var(--spacing-2xl) 0;
+  margin: var(--spacing-2xl) 0;
+}
+
+.bannerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2xl);
+}
+
+.bannerIcon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.bannerText h2 {
+  font-size: var(--font-3xl);
+  margin: 0;
+  font-weight: 900;
+}
+
+.bannerText p {
+  font-size: var(--font-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin: var(--spacing-xs) 0 0 0;
+}
+
+.bannerSubtext {
+  margin-left: auto;
+}
+
+.bannerSubtext p {
+  font-size: var(--font-sm);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.sectionHeader h2 {
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-md);
+}
+
+.sectionHeader p {
+  font-size: var(--font-lg);
+  color: var(--secondary-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Advisories Section */
+.advisoriesSection {
+  padding: var(--spacing-3xl) 0;
+  background: var(--primary-light);
+}
+
+.advisoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.advisoryCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+  border-left: 5px solid;
+  transition: all var(--transition-normal);
+}
+
+.advisoryCard.blue {
+  border-left-color: #3b82f6;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(59, 130, 246, 0.02) 100%);
+}
+
+.advisoryCard.green {
+  border-left-color: #22c55e;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(34, 197, 94, 0.02) 100%);
+}
+
+.advisoryCard.red {
+  border-left-color: #ef4444;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(239, 68, 68, 0.02) 100%);
+}
+
+.advisoryCard.orange {
+  border-left-color: #ff8c42;
+  background: linear-gradient(135deg, rgba(255, 140, 66, 0.05) 0%, rgba(255, 140, 66, 0.02) 100%);
+}
+
+.advisoryCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.advisoryHeader {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.advisoryIcon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.advisoryHeader h3 {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--primary-navy);
+}
+
+.advisoryDesc {
+  font-size: var(--font-sm);
+  color: var(--secondary-gray);
+  margin: 0;
+}
+
+.advisoryContent {
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.advisoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advisoryList li {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-sm);
+  color: var(--secondary-gray);
+}
+
+.advisoryList li:last-child {
+  margin-bottom: 0;
+}
+
+.bullet {
+  font-weight: 700;
+  color: var(--accent-orange);
+  flex-shrink: 0;
+}
+
+/* Alert Levels Section */
+.alertLevelsSection {
+  padding: var(--spacing-3xl) 0;
+  background: white;
+}
+
+.alertLevelsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.alertLevel {
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  color: white;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+}
+
+.alertLevel.red {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.alertLevel.orange {
+  background: linear-gradient(135deg, #ff8c42 0%, #f97316 100%);
+}
+
+.alertLevel.yellow {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: var(--primary-navy);
+}
+
+.alertLevel.green {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+.alertLevel h3 {
+  font-size: var(--font-2xl);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.alertTemp {
+  font-size: var(--font-sm);
+  opacity: 0.9;
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.alertDesc {
+  font-size: var(--font-base);
+  font-weight: 600;
+  margin: 0 0 var(--spacing-lg) 0;
+}
+
+.actions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.actions li {
+  font-size: var(--font-sm);
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+  position: relative;
+}
+
+.actions li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Checklist Section */
+.checklistSection {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, rgba(15, 23, 40, 0.02) 0%, rgba(14, 165, 233, 0.05) 100%);
+}
+
+.checklistGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.checklistCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.checklistCard h4 {
+  font-size: var(--font-lg);
+  color: var(--primary-navy);
+  margin: 0 0 var(--spacing-lg) 0;
+}
+
+.checklistCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklistCard li {
+  font-size: var(--font-sm);
+  color: var(--secondary-gray);
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+  position: relative;
+}
+
+.checklistCard li::before {
+  content: '☑';
+  position: absolute;
+  left: 0;
+  color: var(--accent-orange);
+}
+
+@media (max-width: 768px) {
+  .bannerContent {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .bannerSubtext {
+    margin-left: 0;
+  }
+
+  .bannerText h2 {
+    font-size: var(--font-2xl);
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .advisoriesSection,
+  .alertLevelsSection,
+  .checklistSection {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .advisoryCard,
+  .checklistCard {
+    padding: var(--spacing-lg);
+  }
+}

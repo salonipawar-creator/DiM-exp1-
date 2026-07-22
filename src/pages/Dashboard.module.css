@@ -1,0 +1,113 @@
+.dashboardHeader {
+  background: linear-gradient(135deg, #0f1728 0%, #1a3a52 50%, #0ea5e9 100%);
+  color: white;
+  padding: var(--spacing-3xl) 0;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.dashboardHeader h1 {
+  font-size: var(--font-4xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.dashboardHeader p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--font-lg);
+}
+
+.statsSection {
+  margin-bottom: var(--spacing-3xl);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.chartsSection {
+  margin-bottom: var(--spacing-3xl);
+}
+
+.chartContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.chartWrapper {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.chartWrapper h3 {
+  font-size: var(--font-lg);
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 700;
+}
+
+.weatherSection,
+.alertsSection {
+  margin-bottom: var(--spacing-3xl);
+}
+
+.weatherSection h2,
+.alertsSection h2 {
+  font-size: var(--font-2xl);
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-2xl);
+  font-weight: 700;
+}
+
+.weatherGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.alertsGrid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .dashboardHeader {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .dashboardHeader h1 {
+    font-size: var(--font-3xl);
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .chartContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .chartWrapper {
+    padding: var(--spacing-lg);
+  }
+
+  .weatherGrid {
+    grid-template-columns: 1fr;
+  }
+}

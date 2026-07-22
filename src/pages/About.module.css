@@ -1,0 +1,313 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.sectionHeader h2 {
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-4xl);
+}
+
+.sectionHeader p {
+  font-size: var(--font-lg);
+  color: var(--secondary-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Mission Section */
+.missionSection {
+  padding: var(--spacing-3xl) 0;
+  background: var(--primary-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.missionCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.missionCard h3 {
+  font-size: var(--font-2xl);
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-lg);
+}
+
+.missionCard p {
+  color: var(--secondary-gray);
+  line-height: 1.8;
+  font-size: var(--font-base);
+}
+
+/* Problem Section */
+.problemSection {
+  padding: var(--spacing-3xl) 0;
+  background: white;
+}
+
+.problemContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.problemContent p {
+  font-size: var(--font-lg);
+  color: var(--secondary-gray);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.8;
+}
+
+/* Objectives Section */
+.objectivesSection {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, rgba(15, 23, 40, 0.02) 0%, rgba(14, 165, 233, 0.05) 100%);
+}
+
+.objectivesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.objectiveCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.objectiveIcon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: var(--spacing-md);
+}
+
+.objectiveCard h3 {
+  font-size: var(--font-lg);
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-md);
+}
+
+.objectiveCard p {
+  color: var(--secondary-gray);
+  font-size: var(--font-sm);
+}
+
+/* Technology Section */
+.technologySection {
+  padding: var(--spacing-3xl) 0;
+  background: white;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.techCard {
+  background: linear-gradient(135deg, rgba(255, 140, 66, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+}
+
+.techCard h4 {
+  font-size: var(--font-lg);
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-lg);
+}
+
+.techCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.techCard li {
+  font-size: var(--font-sm);
+  color: var(--secondary-gray);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.techCard li:last-child {
+  border-bottom: none;
+}
+
+/* Team Section */
+.teamSection {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, rgba(15, 23, 40, 0.02) 0%, rgba(14, 165, 233, 0.05) 100%);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.teamCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.teamImage {
+  font-size: 3.5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.teamCard h3 {
+  font-size: var(--font-lg);
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-xs);
+}
+
+.role {
+  font-size: var(--font-sm);
+  color: var(--accent-orange);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.expertise {
+  font-size: var(--font-xs);
+  color: var(--secondary-gray);
+}
+
+/* Future Section */
+.futureSection {
+  padding: var(--spacing-3xl) 0;
+  background: white;
+}
+
+.futureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.futureCard {
+  background: linear-gradient(135deg, rgba(0, 165, 233, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border: 2px solid rgba(14, 165, 233, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+}
+
+.futureCard h4 {
+  font-size: var(--font-lg);
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-md);
+}
+
+.futureCard p {
+  color: var(--secondary-gray);
+  font-size: var(--font-sm);
+}
+
+/* Contact Section */
+.contactSection {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, #0f1728 0%, #1a3a52 50%, #0ea5e9 100%);
+}
+
+.contactCard {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-3xl);
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.contactCard h2 {
+  font-size: var(--font-3xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.contactCard p {
+  font-size: var(--font-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.contactLink {
+  display: inline-block;
+  padding: var(--spacing-md) var(--spacing-2xl);
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-lg);
+  color: white;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  font-weight: 600;
+}
+
+.contactLink:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: white;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .sectionHeader h2 {
+    font-size: var(--font-3xl);
+  }
+
+  .missionSection,
+  .problemSection,
+  .objectivesSection,
+  .technologySection,
+  .teamSection,
+  .futureSection,
+  .contactSection {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .grid,
+  .objectivesGrid,
+  .techGrid,
+  .teamGrid,
+  .futureGrid {
+    gap: var(--spacing-lg);
+  }
+
+  .contactCard {
+    padding: var(--spacing-2xl);
+  }
+}

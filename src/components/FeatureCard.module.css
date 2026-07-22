@@ -1,0 +1,38 @@
+.card {
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.6) 100%);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: all var(--transition-normal);
+  box-shadow: 0 8px 32px rgba(14, 165, 233, 0.1);
+}
+
+.iconWrapper {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-lg);
+  display: inline-block;
+}
+
+.card h3 {
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-xl);
+}
+
+.card p {
+  color: var(--secondary-gray);
+  font-size: var(--font-sm);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: var(--spacing-xl);
+  }
+  
+  .iconWrapper {
+    font-size: 2.5rem;
+  }
+}

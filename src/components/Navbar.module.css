@@ -1,0 +1,124 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background: transparent;
+  backdrop-filter: none;
+  z-index: 1000;
+  transition: all var(--transition-normal);
+  border-bottom: 1px solid transparent;
+  padding: var(--spacing-md) 0;
+}
+
+.navbar.scrolled {
+  background: rgba(248, 250, 252, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--secondary-border);
+  padding: var(--spacing-sm) 0;
+  box-shadow: var(--shadow-md);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: var(--font-2xl);
+  font-weight: 800;
+  background: linear-gradient(135deg, #0f1728 0%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.menu {
+  display: flex;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.link {
+  font-size: var(--font-base);
+  font-weight: 600;
+  color: var(--primary-navy);
+  text-decoration: none;
+  position: relative;
+  transition: color var(--transition-normal);
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #ff8c42 0%, #ef4444 100%);
+  transition: width var(--transition-normal);
+}
+
+.link:hover {
+  color: var(--accent-orange);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-navy);
+  padding: var(--spacing-md);
+  margin: calc(-1 * var(--spacing-md));
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+    border-bottom: 1px solid var(--secondary-border);
+  }
+
+  .menu.active {
+    max-height: 400px;
+  }
+
+  .link {
+    padding: var(--spacing-lg) var(--spacing-md);
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-light);
+  }
+
+  .link::after {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,267 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.sectionHeader h2 {
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-md);
+}
+
+.sectionHeader p {
+  font-size: var(--font-lg);
+  color: var(--secondary-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Components Section */
+.componentsSection {
+  padding: var(--spacing-3xl) 0;
+  background: var(--primary-light);
+}
+
+.componentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.componentCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+  transition: all var(--transition-normal);
+}
+
+.componentCard:hover {
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(14, 165, 233, 0.3);
+}
+
+.componentIcon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.componentCard h3 {
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-lg);
+}
+
+.componentDesc {
+  color: var(--secondary-gray);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-sm);
+}
+
+.detailsList {
+  list-style: none;
+  padding: 0;
+}
+
+.detailsList li {
+  color: var(--secondary-gray);
+  font-size: var(--font-sm);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.detailsList li:last-child {
+  border-bottom: none;
+}
+
+/* Workflow Section */
+.workflowSection {
+  padding: var(--spacing-3xl) 0;
+  background: white;
+}
+
+.workflowDiagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+  padding: var(--spacing-2xl);
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border-radius: var(--radius-lg);
+}
+
+.workflowStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: white;
+  border-radius: var(--radius-md);
+  border: 2px solid rgba(14, 165, 233, 0.2);
+  box-shadow: var(--shadow-sm);
+  min-width: 120px;
+}
+
+.stepIcon {
+  font-size: 2rem;
+}
+
+.workflowStep p {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  text-align: center;
+  color: var(--primary-navy);
+}
+
+.connector {
+  font-size: var(--font-2xl);
+  color: var(--accent-orange);
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .workflowDiagram {
+    flex-direction: column;
+  }
+
+  .connector {
+    transform: rotate(90deg);
+  }
+}
+
+/* Models Section */
+.modelsSection {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, rgba(15, 23, 40, 0.02) 0%, rgba(14, 165, 233, 0.05) 100%);
+}
+
+.modelsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.modelCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+  text-align: center;
+}
+
+.modelIcon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.modelCard h3 {
+  color: var(--primary-navy);
+  margin-bottom: var(--spacing-md);
+}
+
+.modelCard p {
+  color: var(--secondary-gray);
+  font-size: var(--font-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.accuracyBar {
+  background: rgba(14, 165, 233, 0.1);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: var(--spacing-md);
+}
+
+.accuracyFill {
+  background: linear-gradient(135deg, #ff8c42 0%, #ef4444 100%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: var(--spacing-md);
+  transition: width var(--transition-normal);
+}
+
+.accuracyLabel {
+  color: white;
+  font-size: var(--font-xs);
+  font-weight: 700;
+}
+
+.accuracyText {
+  font-size: var(--font-xs);
+  color: var(--secondary-gray);
+}
+
+/* Metrics Section */
+.metricsSection {
+  padding: var(--spacing-3xl) 0;
+  background: white;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.metricCard {
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.metricCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.metricCard h4 {
+  font-size: var(--font-4xl);
+  color: var(--primary-navy);
+  margin: var(--spacing-md) 0;
+  font-weight: 800;
+}
+
+.metricCard p {
+  color: var(--secondary-gray);
+  font-size: var(--font-sm);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .componentsSection,
+  .workflowSection,
+  .modelsSection,
+  .metricsSection {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .componentsGrid,
+  .modelsGrid,
+  .metricsGrid {
+    gap: var(--spacing-lg);
+  }
+
+  .componentCard,
+  .modelCard {
+    padding: var(--spacing-lg);
+  }
+}
